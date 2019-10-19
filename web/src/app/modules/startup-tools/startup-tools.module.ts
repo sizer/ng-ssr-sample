@@ -5,10 +5,11 @@ import { CommonModule } from '@angular/common';
 import { StartupToolsRoutingModule } from './startup-tools-routing.module';
 import { LeanCanvasPageComponent } from './pages/lean-canvas-page/lean-canvas-page.component';
 import { LeanCanvasFormComponent } from './components/lean-canvas-form/lean-canvas-form.component';
+import { LeanCanvasViwerComponent } from './components/lean-canvas-viwer/lean-canvas-viwer.component';
 
 
 @NgModule({
-  declarations: [LeanCanvasPageComponent, LeanCanvasFormComponent],
+  declarations: [LeanCanvasPageComponent, LeanCanvasFormComponent, LeanCanvasViwerComponent],
   imports: [
     CommonModule,
     FormsModule,

@@ -1,6 +1,5 @@
 <div class="container">
-  {{ dispModel() }}
-  <h1></h1>
+  <h1>リーンキャンバス</h1>
   <form #leancanvasForm="ngForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="problem">①課題</label
@@ -70,4 +69,5 @@
     </div>
     <button type="submit">送信</button>
   </form>
+  <app-lean-canvas-viwer [canvas]="model"></app-lean-canvas-viwer>
 </div>
