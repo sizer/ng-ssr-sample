@@ -1,0 +1,73 @@
+<div class="container">
+  <h1>リーンキャンバス</h1>
+  <form #leancanvasForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="problem">①課題</label
+      ><input
+        type="text"
+        id="problem"
+        [(ngModel)]="model.problem"
+        name="problem"
+      />
+    </div>
+    <div class="form-group">
+      <label for="client">②顧客セグメント</label
+      ><input
+        type="text"
+        id="client"
+        [(ngModel)]="model.client"
+        name="client"
+      />
+    </div>
+    <div class="form-group">
+      <label for="value">③独自の価値提案</label
+      ><input type="text" id="value" [(ngModel)]="model.value" name="value" />
+    </div>
+    <div class="form-group">
+      <label for="solution">④ソリューション</label
+      ><input
+        type="text"
+        id="solution"
+        [(ngModel)]="model.solution"
+        name="solution"
+      />
+    </div>
+    <div class="form-group">
+      <label for="channel">⑤チャネル</label
+      ><input
+        type="text"
+        id="channel"
+        [(ngModel)]="model.channel"
+        name="channel"
+      />
+    </div>
+    <div class="form-group">
+      <label for="benefit">⑥収益の流れ</label
+      ><input
+        type="text"
+        id="benefit"
+        [(ngModel)]="model.benefit"
+        name="benefit"
+      />
+    </div>
+    <div class="form-group">
+      <label for="cost">⑦コスト構造</label
+      ><input type="text" id="cost" [(ngModel)]="model.cost" name="cost" />
+    </div>
+    <div class="form-group">
+      <label for="kpi">⑧主要指標</label
+      ><input type="text" id="kpi" [(ngModel)]="model.kpi" name="kpi" />
+    </div>
+    <div class="form-group">
+      <label for="superiority">⑨圧倒的な優位性</label
+      ><input
+        type="text"
+        id="superiority"
+        [(ngModel)]="model.superiority"
+        name="superiority"
+      />
+    </div>
+    <button type="submit">送信</button>
+  </form>
+  <app-lean-canvas-viwer [canvas]="model"></app-lean-canvas-viwer>
+</div>
