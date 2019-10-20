@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@angular/cli": "^8.3.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1"
   }
 }
