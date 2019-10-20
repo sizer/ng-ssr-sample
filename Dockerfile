@@ -11,4 +11,4 @@ ADD web /web
 
 EXPOSE 4000:4000
 
-CMD [ "/bin/sh", "-c", "yarn run build:ssr && yarn run serve:ssr" ]
+CMD [ "/bin/sh", "-c", "yarn run bff:start" ]
