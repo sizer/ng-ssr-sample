@@ -18,6 +18,7 @@
 import 'zone.js/dist/zone-node';
 
 import * as express from 'express';
+import * as helmet from 'helmet';
 import {join} from 'path';
 
 // Express server
@@ -40,6 +41,10 @@ app.engine('html', ngExpressEngine({
 
 app.set('view engine', 'html');
 app.set('views', DIST_FOLDER);
+
+// Helmet は、HTTP ヘッダーを適切に設定することによって、いくつかの既知の Web の脆弱性からアプリケーションを保護します。
+// https://expressjs.com/ja/advanced/best-practice-security.html
+app.use(helmet());
 
 // Example Express Rest API endpoints
 // app.get('/api/**', (req, res) => { });
