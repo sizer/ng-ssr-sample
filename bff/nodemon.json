@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "watch": [
+    "dist"
+  ],
+  "env": {
+  }
+}
